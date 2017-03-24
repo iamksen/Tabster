@@ -1,11 +1,23 @@
 var col = document.getElementById("col_plus");
 var row = document.getElementById("row_plus");
 
-col.addEventListener('click', function(){
-	//alert("A column is added");
-	chrome.runtime.sendMessage("main.html");
-});
+var isFirst = 0;
+col.onclick = function() {
+ 
 
-row.addEventListener('click', function(){
-	alert("A row is added");
-});
+  if( isFirst == 0 ){
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+      chrome.tabs.update(tabs[0].id, {url: "main.html"});
+    });
+    isFirst = 1;
+  }
+  else{
+    //alert("second time");
+  }
+};
+
+row.onclick = function() {
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.update(tabs[0].id, {url: "main.html"});
+    });
+};
