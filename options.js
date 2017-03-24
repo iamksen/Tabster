@@ -1,23 +1,29 @@
-var col = document.getElementById("col_plus");
-//var row = document.getElementById("row_plus");
+var template_a = document.getElementById("template_a");
+var template_b = document.getElementById("template_b");
+var template_c = document.getElementById("template_c");
+var template_d = document.getElementById("template_d");
 
-var isFirst = 0;
-col.onclick = function() {
-  if( isFirst == 0 ){
-    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-      chrome.tabs.update(tabs[0].id, {url: "main.html"});
-    });
-    isFirst = 1;
-  } else {
-    // add one more column
-    //alert("second time");
-  }
+
+template_a.onclick = function() {
+  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    chrome.tabs.update(tabs[0].id, {url: "a.html"});
+  });
 };
 
-/*
-row.onclick = function() {
-    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        chrome.tabs.update(tabs[0].id, {url: "main.html"});
-    });
+template_b.onclick = function() {
+  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    chrome.tabs.update(tabs[0].id, {url: "b.html"});
+  });
 };
-*/
+
+template_c.onclick = function() {
+  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    chrome.tabs.update(tabs[0].id, {url: "c.html"});
+  });
+};
+
+template_d.onclick = function() {
+  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    chrome.tabs.update(tabs[0].id, {url: "d.html"});
+  });
+};
