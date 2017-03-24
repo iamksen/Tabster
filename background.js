@@ -1,0 +1,3 @@
+/*
+	background.js accepts all the chrome APIs
+*/

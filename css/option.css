@@ -1,0 +1,21 @@
+body{
+   width:250px;
+   height:300px;
+}
+
+.icon{
+	width:30%;
+	height:27%;
+}
+
+.iconfloat {
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 0 2px transparent;
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.iconfloat:hover, .iconfloat:focus, .iconfloat:active {
+  transform: translateY(-5px);
+}
