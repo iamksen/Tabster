@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html>
+	<style>
+	html, body {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+	#video {
+		width: 100%;
+		height: 80%;
+	}
+	</style>
 <body>
-
-
 <div>
 	Youtube Link : 
 	<input id="youtubeLink"></input>
@@ -10,7 +23,7 @@
 </div>
 
 
-<iframe id="video" width="420" height="345" src="" frameborder="0" allowfullscreen></iframe>
+<iframe id="video" src="" frameborder="0" allowfullscreen></iframe>
 
 <script type="text/javascript" src="js/youtube.js"></script>
 <script type="text/javascript" src="js/player.js"></script>

@@ -5,12 +5,17 @@
     <title>Example of HTML Iframe</title>
 </head>
 <style>
-iframe {
-  height: 300px;
-  width: 300px;
-  resize: both;
-  overflow: auto;
-}
+  body,html{
+  	width:100%;
+  	height:100%;
+  	overflow: hidden;
+  }
+  iframe {
+    height: 100%;
+    width: 100%;
+    resize: both;
+    overflow: auto;
+  }
 </style>
 <body>
     <iframe src="player.html" style="border:none;"></iframe>
