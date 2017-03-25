@@ -3,33 +3,39 @@
 <head>
 	<style>
 		html, body {height:100%;width:100%;overflow:hidden;}
-		iframe {height:100%;width:100%; overflow:hidden;}
+		iframe {height:100%;width:100%; overflow:hidden; }
+
 		input[type=text] {
 		    width: 130px;
 		    box-sizing: border-box;
 		    border: 2px solid #ccc;
-		    border-radius: 4px;
+		    border-radius: 6px;
 		    font-size: 16px;
 		    background-color: white;
 		    background-repeat: no-repeat;
-		    padding: 12px 20px 12px 40px;
+		    padding: 12px 5px 10px 5px;
 		    -webkit-transition: width 0.4s ease-in-out;
 		    transition: width 0.4s ease-in-out;
 		}
 
 		input[type=text]:focus {
 		    width: 100%;
+		    border-color: #00ffff;
+		    border-radius: 6px;
 		}
 	</style>
 </head>
 <body>
+	<div style="overflow:hidden; padding-bottom:5px;">
 	<div>
-	<input type="text" name="search" id="search_box" style="height:30px;min-width:80%;max-width:80%" padding-left="5px" placeholder="">
-	<img id="go_button" src="images/search.png"/ padding-top= "30px" height="20px" width="20px">
+		<input type="text" name="search" id="search_box" style="height:30px;min-width:90%;max-width:90%;float: left;" padding-left="5px" placeholder="">
 	</div>
-	<br/>
+	<div style="float: left;padding-left: 5px;">
+		<img id="go_button" src="images/search.png" height="30px" width="30px">
+	</div>
+	</div>
 	
-	<iframe id="lp" src="landup_page.html"></iframe>
+	<iframe id="lp" src="landup_page.html" ></iframe>
 	<script type="text/javascript" src="mainframe_content.js"></script>
 
 
