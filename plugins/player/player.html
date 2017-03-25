@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='stylesheet' href='http://releases.flowplayer.org/7.0.2/skin/skin.css'>
+  <link rel='stylesheet' href='http://demos.flowplayer.org/media/css/codepen.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <p id="choice" class="info"><input type="file" id="file"> File type: <span class="ftype"></span></p>
+
+<div id="player">
+   <div id="typewarning">
+     Your browser cannot play <span class="ftype"></span>. Please choose a different file.
+   </div>
+
+   <div id="audiowarning">
+     Flowplayer currently does not support audio playback. Please choose a different file.
+   </div>
+
+   <div class="fp-ratio"></div>
+</div>
+  <script src='js/player.js'></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>

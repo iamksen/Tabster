@@ -1,11 +1,11 @@
 body{
    width:250px;
-   height:200px;
+   height:50px;
 }
 
 .icon{
 	width:30%;
-	height:20%;
+	height:27%;
 }
 
 .iconfloat {
@@ -17,5 +17,5 @@ body{
 }
 
 .iconfloat:hover, .iconfloat:focus, .iconfloat:active {
-  transform: translateY(-3px);
+  transform: translateY(-5px);
 }

@@ -1,0 +1,26 @@
+#player {
+  position: relative;
+  background: #333;
+}
+/* set ratio before player is loaded via css */
+#player .fp-ratio {
+  padding-top: 56.25%;
+}
+#typewarning, #audiowarning {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  font-weight: bold;
+  font-size: 150%;
+  color: #ff0;
+  text-shadow: 0 0 3px #000;
+  text-align: center;
+  display: none;
+}
+
+#typewarning {
+  z-index: 1;
+}
+#audiowarning {
+  z-index: 2;
+}

@@ -4,14 +4,34 @@
 	<style>
 		html, body {height:100%;width:100%;overflow:hidden;}
 		iframe {height:100%;width:100%; overflow:hidden;}
+		input[type=text] {
+		    width: 130px;
+		    box-sizing: border-box;
+		    border: 2px solid #ccc;
+		    border-radius: 4px;
+		    font-size: 16px;
+		    background-color: white;
+		    background-repeat: no-repeat;
+		    padding: 12px 20px 12px 40px;
+		    -webkit-transition: width 0.4s ease-in-out;
+		    transition: width 0.4s ease-in-out;
+		}
+
+		input[type=text]:focus {
+		    width: 100%;
+		}
 	</style>
 </head>
 <body>
-	<input type="text" id="search_box" style="width:92%" placeholder="http://">
-	<button id="go_button">Go</button>
+	<div>
+	<input type="text" name="search" id="search_box" style="height:30px;min-width:80%;max-width:80%" padding-left="5px" placeholder="">
+	<img id="go_button" src="images/search.png"/ padding-top= "30px" height="20px" width="20px">
+	</div>
+	<br/>
+	
 	<iframe id="lp" src="landup_page.html"></iframe>
 	<script type="text/javascript" src="mainframe_content.js"></script>
 
-	<script type="text/javascript" src="js/popup.js"></script>
+
 </body>
 </html>
